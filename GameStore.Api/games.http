@@ -1,0 +1,29 @@
+GET http://localhost:5164/games
+
+###
+GET http://localhost:5164/games/4
+
+###
+POST http://localhost:5164/games
+Content-Type: application/json
+
+{
+    "name" : "Minecraft",
+    "genre" : "Kids and family",
+    "price" : 24.99,
+    "releaseDate" : "2011-11-18"
+}
+
+###
+PUT http://localhost:5164/games/1
+Content-Type: application/json
+
+{
+    "name": "X-COM 3",
+    "genre": "Science fiction",
+    "price": 5.65,
+    "releaseDate": "1999-02-14"
+}
+
+###
+DELETE http://localhost:5164/games/2
